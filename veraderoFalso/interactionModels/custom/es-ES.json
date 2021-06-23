@@ -1,0 +1,115 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "serán verdaderas",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "instrucción",
+            "instrucciones",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "vofSlot",
+              "type": "TrueFalse"
+            }
+          ],
+          "samples": [
+            "es {vofSlot}",
+            "{vofSlot}"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": [
+            "paso",
+            "dime la siguiente",
+            "siguiente"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "vuelve a decirlo",
+            "dime otra vez",
+            "repite",
+            "repite de nuevo",
+            "otra vez"
+          ]
+        },
+        {
+          "name": "ClueIntent",
+          "slots": [],
+          "samples": [
+            "pista",
+            "ni idea",
+            "más información",
+            "dime una pista",
+            "una pista",
+            "dame una pista"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "falsa"
+              }
+            },
+            {
+              "name": {
+                "value": "verdadera"
+              }
+            },
+            {
+              "name": {
+                "value": "falso"
+              }
+            },
+            {
+              "name": {
+                "value": "verdadero"
+              }
+            }
+          ],
+          "name": "TrueFalse"
+        }
+      ]
+    }
+  },
+  "version": "11"
+}

@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "series de palabras",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "instrucción",
+            "instrucciones",
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "colorSlot",
+              "type": "AMAZON.Color"
+            },
+            {
+              "name": "paisSlot",
+              "type": "AMAZON.Country"
+            },
+            {
+              "name": "animalSlot",
+              "type": "AMAZON.Animal"
+            }
+          ],
+          "samples": [
+            "{animalSlot}",
+            "{paisSlot}",
+            "Simón dice {colorSlot}",
+            "{colorSlot}",
+            "dice {colorSlot}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "otra vez",
+            "repite de nuevo",
+            "repite",
+            "dímelo otra vez",
+            "vuelve a decirlo"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "OptionIntent",
+          "slots": [
+            {
+              "name": "optionSlot",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "la {optionSlot}",
+            "{optionSlot}",
+            "opción {optionSlot}"
+          ]
+        },
+        {
+          "name": "ChangeOptionIntent",
+          "slots": [],
+          "samples": [
+            "otra opción",
+            "cambia",
+            "cambia la opcion"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "41"
+}
